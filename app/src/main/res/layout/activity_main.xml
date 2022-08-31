@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính chỉ số BMI"
+        android:textSize="45sp"
+        android:layout_marginVertical="25dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cân nặng(kg)"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="30dp" />
+    <EditText
+        android:id="@+id/canNang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+        android:layout_marginVertical="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chiều cao(cm)"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"/>
+    <EditText
+        android:id="@+id/chieuCao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_bg"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/btnTinhBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="Tính BMI"
+        android:background="@drawable/btn_bg"
+        android:textColor="#fafafa"
+        android:padding="8dp"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Kết quả"
+        android:textColor="#000"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+    />
+    <TextView
+        android:id="@+id/nhanXet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        />
+</LinearLayout>
